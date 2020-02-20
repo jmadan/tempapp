@@ -1,0 +1,38 @@
+{
+  "name": "tempapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jasdeep Madan <jasdeepm@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "deps": "yarn install",
+    "start": "babel-node ./index.js"
+  },
+  "dependencies": {
+    "@godaddy/terminus": "^4.3.1",
+    "atlassian-jwt": "^1.0.2",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "http": "^0.0.0",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.8",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/runtime-corejs2": "^7.8.4"
+  }
+}

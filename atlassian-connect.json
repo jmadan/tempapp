@@ -1,0 +1,58 @@
+{
+    "name": "J-TrainSpotting",
+    "description": "Spot Your Progress",
+    "key": "trainspottinjas",
+    "lifecycle": {
+        "installed": "/installed"
+    },
+    "baseUrl": "https://46604e03.ngrok.io",
+    "links": {
+        "self": "https://46604e03.ngrok.io/atlassian-connect.json"
+    },
+    "vendor": {
+        "name": "Example Inc.",
+        "url": "https://trainspottin.herokuapp.com/"
+    },
+    "authentication": {
+        "type": "jwt"
+    },
+    "apiVersion": 1,
+    "modules": {
+        "jiraProjectPages": [
+            {
+                "key": "trainspottin-key",
+                "name": {
+                    "value": "j-TrainSpotting"
+                },
+                "url": "/",
+                "iconUrl": "/images/hills.png",
+                "weight": 1
+            }
+        ],
+        "jiraIssueFields": [
+            {
+                "description": {
+                    "value": "Field used by Hill chart to store coordinates of the issue on the Hill"
+                },
+                "type": "read_only",
+                "property": {
+                    "path": "xycoordinates",
+                    "key": "xycoordinates",
+                    "type": "string"
+                },
+                "name": {
+                    "value": "xycoordinates"
+                },
+                "key": "xy-coordinates"
+            }
+        ]
+    },
+    "scopes": [
+        "READ",
+        "WRITE",
+        "DELETE",
+        "PROJECT_ADMIN",
+        "ADMIN",
+        "ACT_AS_USER"
+    ]
+}
